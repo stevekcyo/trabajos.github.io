@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Base de Datos II</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fef9f3;
+      color: #4b2e2e;
+    }
+    header {
+      background: linear-gradient(135deg, #a0522d, #c77f40);
+      color: #fffaf1;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 0.7rem;
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      color: #8b4513;
+      margin-bottom: 0.5rem;
+    }
+    hr {
+      border: none;
+      border-top: 3px solid #e0b084;
+      width: 60px;
+      margin: 1rem 0 2rem;
+    }
+    .task-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .task-card {
+      background-color: #fff3e6;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      text-decoration: none;
+      color: #4b2e2e;
+      display: flex;
+      flex-direction: column;
+    }
+    .task-card:hover {
+      transform: translateY(-5px);
+      background-color: #ffe4cc;
+    }
+    .task-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .task-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+    .task-type {
+      font-weight: 600;
+      color: #a0522d;
+      margin-bottom: 0.5rem;
+    }
+    .task-desc {
+      font-size: 0.95rem;
+      color: #5a3b3b;
+    }
+    .external-link {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .external-link a {
+      display: inline-block;
+      background-color: #d2691e;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .external-link a:hover {
+      background-color: #aa4b14;
+    }
+    footer {
+      background-color: #8b4513;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portafolio de Trabajos</h1>
+    <p>Barreto Roncal Steve — Base de Datos II | 2025</p>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title">Trabajos </h2>
+      <hr>
+      <div class="task-list">
+        <a href="tarea/Task 1 Resume (1).pdf" class="task-card" target="_blank">
+          <div class="task-icon">🗂️</div>
+          <div class="task-title">Semana 1</div>
+          <div class="task-type">RESUMEN DEL LIBRO </div>
+          <div class="task-desc">Resumen del libro hasta el capitulo 3</div>
+        </a>
+        <a href="tarea/diagram of exercise 1.png" class="task-card" target="_blank">
+          <div class="task-icon">📐</div>
+          <div class="task-title">Semana 2</div>
+          <div class="task-type">Diagrama  de Entidad Relacion</div>
+          
+          <div class="task-desc">Diagrama de Entidad Relacion, PRIMER EJERCICIO.</div>
+        </a>
+        <a href="tarea/diagram of exercise 2.png" class="task-card" target="_blank">
+          <div class="task-icon">📐</div>
+          <div class="task-title">Semana 2</div>
+          <div class="task-type">Diagrama  de Entidad Relacion</div>
+          
+          <div class="task-desc">Diagrama de Entidad Relacion, SEGUNDO EJERCICIO.</div>
+        </a>
+        <a href="tarea/TABLES OF EXERCISES (1) (1).xlsx" class="task-card" target="_blank">
+          <div class="task-icon">📊</div>
+          <div class="task-title">Semana 3</div>
+          <div class="task-type">Tablas (Excel)</div>
+          <div class="task-desc">Esquema y datos de tablas derivadas de los diagramas.</div>
+        </a>
+        <a href="#" class="task-card">
+          <div class="task-icon">🔧</div>
+          <div class="task-title">Semana 4</div>
+          <div class="task-type">Diagrama  de Entidad Relacion</div>
+          <div class="task-desc">Diagrama de Entidad Relacion, TERCER EJERCICIO.</div>
+        </a>
+        <a href="#" class="task-card">
+          <div class="task-icon">🔧</div>
+          <div class="task-title">Semana 4</div>
+          <div class="task-type">Diagrama  de Entidad Relacion</div>
+          <div class="task-desc">Diagrama de Entidad Relacion, CUARTO EJERCICIO.</div>
+        </a>
+        <a href="#" class="task-card">
+          <div class="task-icon">🔧</div>
+          <div class="task-title">Semana 5</div>
+          <div class="task-type">MANUAL</div>
+          <div class="task-desc">Este trabajo estará disponible próximamente.</div>
+        </a>
+      </div>
+    </section>
+
+   
+    <div class="external-link">
+      <a href="https://azure.microsoft.com/" target="_blank">Visitar Microsoft Azure</a>
+    </div>
+  </main>
+
+  <footer>
+    Hecho con dedicación por Barreto Roncal Steve | Universidad Peruana Los Andes | Base de Datos II - 2025
+  </footer>
+
+</body>
+</html>
