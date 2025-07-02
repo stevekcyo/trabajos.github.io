@@ -96,6 +96,25 @@
       color: #5a3b3b;
       flex-grow: 1;
     }
+    .download-button {
+      margin-top: 1rem;
+      background-color: #d94cd6;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 4px 10px rgba(217, 76, 214, 0.4);
+    }
+    .download-button:hover {
+      background-color: #bb2fc0;
+      transform: translateY(-2px);
+    }
     .external-link {
       margin-top: 3rem;
       text-align: center;
@@ -137,11 +156,12 @@
 
   <main>
 
+    <!-- Secciones originales -->
     <section class="task-group">
       <h2 class="section-title">Semana 1</h2>
       <hr>
       <div class="task-list">
-        <a href="tarea/Task 1 Resume (1).pdf" class="task-card" target="_blank" rel="noopener noreferrer">
+        <a href="tarea/Task_1_Resume.pdf" class="task-card" target="_blank">
           <div class="task-icon">🗂️</div>
           <div class="task-title">Resumen del libro</div>
           <div class="task-type">RESUMEN DEL LIBRO</div>
@@ -154,13 +174,13 @@
       <h2 class="section-title">Semana 2</h2>
       <hr>
       <div class="task-list">
-        <a href="tarea/diagram of exercise 1.png" class="task-card" target="_blank" rel="noopener noreferrer">
+        <a href="tarea/diagram1.png" class="task-card" target="_blank">
           <div class="task-icon">📐</div>
           <div class="task-title">Primer ejercicio</div>
           <div class="task-type">Diagrama de Entidad Relación</div>
           <div class="task-desc">Diagrama de Entidad Relación, PRIMER EJERCICIO.</div>
         </a>
-        <a href="tarea/diagram of exercise 2.png" class="task-card" target="_blank" rel="noopener noreferrer">
+        <a href="tarea/diagram2.png" class="task-card" target="_blank">
           <div class="task-icon">📐</div>
           <div class="task-title">Segundo ejercicio</div>
           <div class="task-type">Diagrama de Entidad Relación</div>
@@ -173,7 +193,7 @@
       <h2 class="section-title">Semana 3</h2>
       <hr>
       <div class="task-list">
-        <a href="tarea/TABLES OF EXERCISES (1) (1).xlsx" class="task-card" target="_blank" rel="noopener noreferrer">
+        <a href="tarea/tables_exercises.xlsx" class="task-card" target="_blank">
           <div class="task-icon">📊</div>
           <div class="task-title">Tablas</div>
           <div class="task-type">Tablas (Excel)</div>
@@ -213,6 +233,28 @@
         </a>
       </div>
     </section>
+
+    <!-- Manuales 1 a 8 -->
+    <!-- Recuerda subir los archivos a /manuales/manualX.pdf -->
+    <!-- Puedes cambiar nombres si deseas -->
+    ${[...Array(8)].map((_, i) => {
+      const n = i + 1;
+      return `
+    <section class="task-group">
+      <h2 class="section-title">Manual ${n}</h2>
+      <hr>
+      <div class="task-list">
+        <div class="task-card">
+          <div class="task-icon">📘</div>
+          <div class="task-title">Manual ${n}</div>
+          <div class="task-type">Guía de ejercicios</div>
+          <div class="task-desc">Contenido descargable del Manual número ${n}.</div>
+          <a href="manuales/manual${n}.pdf" class="download-button" download>📥 Descargar</a>
+        </div>
+      </div>
+    </section>
+      `;
+    }).join("")}
 
     <div class="external-link">
       <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer">Visitar Microsoft Azure</a>
