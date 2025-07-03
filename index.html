@@ -115,26 +115,6 @@
       background-color: #bb2fc0;
       transform: translateY(-2px);
     }
-    .external-link {
-      margin-top: 3rem;
-      text-align: center;
-    }
-    .external-link a {
-      display: inline-block;
-      background-color: #d2691e;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 4px 8px rgba(210,105,30,0.4);
-    }
-    .external-link a:hover {
-      background-color: #aa4b14;
-      box-shadow: 0 6px 14px rgba(170,75,20,0.6);
-    }
     footer {
       background-color: #8b4513;
       color: white;
@@ -148,25 +128,23 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Portafolio de Trabajos</h1>
     <p>Barreto Roncal Steve — Base de Datos II | 2025</p>
   </header>
-
   <main>
-
-    <!-- Secciones originales -->
+    <!-- Módulos desde Semana 1 a 15 con base en los archivos reales -->
     <section class="task-group">
       <h2 class="section-title">Semana 1</h2>
       <hr>
       <div class="task-list">
-        <a href="tarea/Task_1_Resume.pdf" class="task-card" target="_blank">
+        <div class="task-card">
           <div class="task-icon">🗂️</div>
           <div class="task-title">Resumen del libro</div>
-          <div class="task-type">RESUMEN DEL LIBRO</div>
+          <div class="task-type">Resumen</div>
           <div class="task-desc">Resumen del libro hasta el capítulo 3.</div>
-        </a>
+          <a href="tarea/Task 1 Resume (1).pdf" class="download-button" download>📥 Descargar</a>
+        </div>
       </div>
     </section>
 
@@ -174,18 +152,20 @@
       <h2 class="section-title">Semana 2</h2>
       <hr>
       <div class="task-list">
-        <a href="tarea/diagram1.png" class="task-card" target="_blank">
+        <div class="task-card">
           <div class="task-icon">📐</div>
           <div class="task-title">Primer ejercicio</div>
-          <div class="task-type">Diagrama de Entidad Relación</div>
-          <div class="task-desc">Diagrama de Entidad Relación, PRIMER EJERCICIO.</div>
-        </a>
-        <a href="tarea/diagram2.png" class="task-card" target="_blank">
+          <div class="task-type">Diagrama ER</div>
+          <div class="task-desc">Entidad Relación - Ejercicio 1</div>
+          <a href="tarea/diagram of exercise 1.png" class="download-button" download>📥 Descargar</a>
+        </div>
+        <div class="task-card">
           <div class="task-icon">📐</div>
           <div class="task-title">Segundo ejercicio</div>
-          <div class="task-type">Diagrama de Entidad Relación</div>
-          <div class="task-desc">Diagrama de Entidad Relación, SEGUNDO EJERCICIO.</div>
-        </a>
+          <div class="task-type">Diagrama ER</div>
+          <div class="task-desc">Entidad Relación - Ejercicio 2</div>
+          <a href="tarea/diagram of exercise 2.png" class="download-button" download>📥 Descargar</a>
+        </div>
       </div>
     </section>
 
@@ -193,12 +173,13 @@
       <h2 class="section-title">Semana 3</h2>
       <hr>
       <div class="task-list">
-        <a href="tarea/tables_exercises.xlsx" class="task-card" target="_blank">
+        <div class="task-card">
           <div class="task-icon">📊</div>
           <div class="task-title">Tablas</div>
-          <div class="task-type">Tablas (Excel)</div>
-          <div class="task-desc">Esquema y datos de tablas derivadas de los diagramas.</div>
-        </a>
+          <div class="task-type">Excel</div>
+          <div class="task-desc">Ejercicios con tablas derivadas.</div>
+          <a href="tarea/TABLES OF EXERCISES (1) (1).xlsx" class="download-button" download>📥 Descargar</a>
+        </div>
       </div>
     </section>
 
@@ -206,18 +187,15 @@
       <h2 class="section-title">Semana 4</h2>
       <hr>
       <div class="task-list">
-        <a href="#" class="task-card" aria-disabled="true">
-          <div class="task-icon">🔧</div>
-          <div class="task-title">Tercer ejercicio</div>
-          <div class="task-type">Diagrama de Entidad Relación</div>
-          <div class="task-desc">Diagrama de Entidad Relación, TERCER EJERCICIO.</div>
-        </a>
-        <a href="#" class="task-card" aria-disabled="true">
-          <div class="task-icon">🔧</div>
-          <div class="task-title">Cuarto ejercicio</div>
-          <div class="task-type">Diagrama de Entidad Relación</div>
-          <div class="task-desc">Diagrama de Entidad Relación, CUARTO EJERCICIO.</div>
-        </a>
+        <div class="task-card">
+          <div class="task-icon">📄</div>
+          <div class="task-title">Diagramas</div>
+          <div class="task-type">Word</div>
+          <div class="task-desc">Archivos cuarto, tercero y segundo.</div>
+          <a href="tarea/cuarto.docx" class="download-button" download>📥 Cuarto</a>
+          <a href="tarea/tercero.docx" class="download-button" download>📥 Tercero</a>
+          <a href="tarea/segundo.docx" class="download-button" download>📥 Segundo</a>
+        </div>
       </div>
     </section>
 
@@ -225,207 +203,162 @@
       <h2 class="section-title">Semana 5</h2>
       <hr>
       <div class="task-list">
-        <a href="#" class="task-card" aria-disabled="true">
-          <div class="task-icon">🔧</div>
-          <div class="task-title">Manual</div>
-          <div class="task-type">MANUAL</div>
-          <div class="task-desc">Este trabajo estará disponible próximamente.</div>
-        </a>
+        <div class="task-card">
+          <div class="task-icon">📘</div>
+          <div class="task-title">Manuales</div>
+          <div class="task-type">PDF/DOCX</div>
+          <div class="task-desc">Manuales del 1 al 7</div>
+          <a href="tarea/Manual 1.pdf" class="download-button" download>Manual 1</a>
+          <a href="tarea/Manual 2.docx" class="download-button" download>Manual 2</a>
+          <a href="tarea/Manual 3.docx" class="download-button" download>Manual 3</a>
+          <a href="tarea/Manual 4.docx" class="download-button" download>Manual 4</a>
+          <a href="tarea/Manual 5.docx" class="download-button" download>Manual 5</a>
+          <a href="tarea/Manual 6.docx" class="download-button" download>Manual 6</a>
+          <a href="tarea/Manual 7.docx" class="download-button" download>Manual 7</a>
+        </div>
       </div>
     </section>
+    <section class="task-group">
+  <h2 class="section-title">Semana 7</h2>
+  <hr>
+  <div class="task-list">
+    <div class="task-card">
+      <div class="task-icon">📝</div>
+      <div class="task-title">Ejercicio Quinto</div>
+      <div class="task-type">Documento</div>
+      <div class="task-desc">Contenido correspondiente al documento "quinto".</div>
+      <a href="tarea/quinto.docx" class="download-button" download>📥 Descargar</a>
+    </div>
+  </div>
+</section>
 
 <section class="task-group">
-  <h2 class="section-title">Manual 1</h2>
+  <h2 class="section-title">Semana 8</h2>
   <hr>
   <div class="task-list">
-    <!-- Manual -->
     <div class="task-card">
-      <div class="task-icon">📘</div>
-      <div class="task-title">Manual 1</div>
-      <div class="task-type">Guía de ejercicios</div>
-      <div class="task-desc">Contenido descargable del Manual número 1.</div>
-      <a href="manuales/manual1.pdf" class="download-button" download>📥 Descargar</a>
-    </div>
-
-    <!-- Ejercicio -->
-    <div class="task-card">
-      <div class="task-icon">📐</div>
-      <div class="task-title">Ejercicio 1</div>
-      <div class="task-type">Ejercicio práctico</div>
-      <div class="task-desc">Ejercicio resuelto asociado al Manual 1.</div>
-      <a href="ejercicios/ejercicio1.pdf" class="download-button" download>📎 Ver Ejercicio</a>
+      <div class="task-icon">📝</div>
+      <div class="task-title">Ejercicio Primero</div>
+      <div class="task-type">Documento</div>
+      <div class="task-desc">Archivo nombrado como "primero.docx".</div>
+      <a href="tarea/primero.docx" class="download-button" download>📥 Descargar</a>
     </div>
   </div>
 </section>
-    <section class="task-group">
-  <h2 class="section-title">Manual 1</h2>
-  <hr>
-  <div class="task-list">
-    <!-- Manual -->
-    <div class="task-card">
-      <div class="task-icon">📘</div>
-      <div class="task-title">Manual 2</div>
-      <div class="task-type">Guía de ejercicios</div>
-      <div class="task-desc">Contenido descargable del Manual número 2.</div>
-      <a href="manuales/manual1.pdf" class="download-button" download>📥 Descargar</a>
-    </div>
 
-    <!-- Ejercicio -->
-    <div class="task-card">
-      <div class="task-icon">📐</div>
-      <div class="task-title">Ejercicio </div>
-      <div class="task-type">Ejercicio práctico</div>
-      <div class="task-desc">Ejercicio resuelto asociado al Manual 2.</div>
-      <a href="ejercicios/ejercicio1.pdf" class="download-button" download>📎 Ver Ejercicio</a>
-    </div>
-  </div>
-</section>
-    <section class="task-group">
-  <h2 class="section-title">Manual 3</h2>
+<section class="task-group">
+  <h2 class="section-title">Semana 9</h2>
   <hr>
   <div class="task-list">
-    <!-- Manual -->
-    <div class="task-card">
-      <div class="task-icon">📘</div>
-      <div class="task-title">Manual 3</div>
-      <div class="task-type">Guía de ejercicios</div>
-      <div class="task-desc">Contenido descargable del Manual número 3.</div>
-      <a href="manuales/manual1.pdf" class="download-button" download>📥 Descargar</a>
-    </div>
-
-    <!-- Ejercicio -->
-    <div class="task-card">
-      <div class="task-icon">📐</div>
-      <div class="task-title">Ejercicio 3</div>
-      <div class="task-type">Ejercicio práctico</div>
-      <div class="task-desc">Ejercicio resuelto asociado al Manual 3.</div>
-      <a href="ejercicios/ejercicio1.pdf" class="download-button" download>📎 Ver Ejercicio</a>
-    </div>
-  </div>
-</section>
-    <section class="task-group">
-  <h2 class="section-title">Manual 4</h2>
-  <hr>
-  <div class="task-list">
-    <!-- Manual -->
-    <div class="task-card">
-      <div class="task-icon">📘</div>
-      <div class="task-title">Manual 4</div>
-      <div class="task-type">Guía de ejercicios</div>
-      <div class="task-desc">Contenido descargable del Manual número 4.</div>
-      <a href="manuales/manual1.pdf" class="download-button" download>📥 Descargar</a>
-    </div>
-
-    <!-- Ejercicio -->
-    <div class="task-card">
-      <div class="task-icon">📐</div>
-      <div class="task-title">Ejercicio 4</div>
-      <div class="task-type">Ejercicio práctico</div>
-      <div class="task-desc">Ejercicio resuelto asociado al Manual 4.</div>
-      <a href="ejercicios/ejercicio1.pdf" class="download-button" download>📎 Ver Ejercicio</a>
-    </div>
-  </div>
-</section>
-    <section class="task-group">
-  <h2 class="section-title">Manual 5</h2>
-  <hr>
-  <div class="task-list">
-    <!-- Manual -->
-    <div class="task-card">
-      <div class="task-icon">📘</div>
-      <div class="task-title">Manual 5</div>
-      <div class="task-type">Guía de ejercicios</div>
-      <div class="task-desc">Contenido descargable del Manual número 5.</div>
-      <a href="manuales/manual1.pdf" class="download-button" download>📥 Descargar</a>
-    </div>
-
-    <!-- Ejercicio -->
-    <div class="task-card">
-      <div class="task-icon">📐</div>
-      <div class="task-title">Ejercicio 5</div>
-      <div class="task-type">Ejercicio práctico</div>
-      <div class="task-desc">Ejercicio resuelto asociado al Manual 5.</div>
-      <a href="ejercicios/ejercicio1.pdf" class="download-button" download>📎 Ver Ejercicio</a>
-    </div>
-  </div>
-</section>
-    <section class="task-group">
-  <h2 class="section-title">Manual 1</h2>
-  <hr>
-  <div class="task-list">
-    <!-- Manual -->
-    <div class="task-card">
-      <div class="task-icon">📘</div>
-      <div class="task-title">Manual 6</div>
-      <div class="task-type">Guía de ejercicios</div>
-      <div class="task-desc">Contenido descargable del Manual número 6.</div>
-      <a href="manuales/manual1.pdf" class="download-button" download>📥 Descargar</a>
-    </div>
-
-    <!-- Ejercicio -->
-    <div class="task-card">
-      <div class="task-icon">📐</div>
-      <div class="task-title">Ejercicio 6</div>
-      <div class="task-type">Ejercicio práctico</div>
-      <div class="task-desc">Ejercicio resuelto asociado al Manual 6.</div>
-      <a href="ejercicios/ejercicio1.pdf" class="download-button" download>📎 Ver Ejercicio</a>
-    </div>
-  </div>
-</section>
-    <section class="task-group">
-  <h2 class="section-title">Manual 7</h2>
-  <hr>
-  <div class="task-list">
-    <!-- Manual -->
-    <div class="task-card">
-      <div class="task-icon">📘</div>
-      <div class="task-title">Manual 7</div>
-      <div class="task-type">Guía de ejercicios</div>
-      <div class="task-desc">Contenido descargable del Manual número 7.</div>
-      <a href="manuales/manual1.pdf" class="download-button" download>📥 Descargar</a>
-    </div>
-
-    <!-- Ejercicio -->
-    <div class="task-card">
-      <div class="task-icon">📐</div>
-      <div class="task-title">Ejercicio 7</div>
-      <div class="task-type">Ejercicio práctico</div>
-      <div class="task-desc">Ejercicio resuelto asociado al Manual 7.</div>
-      <a href="ejercicios/ejercicio1.pdf" class="download-button" download>📎 Ver Ejercicio</a>
-    </div>
-  </div>
-</section>
-    <section class="task-group">
-  <h2 class="section-title">Manual 1</h2>
-  <hr>
-  <div class="task-list">
-    <!-- Manual -->
     <div class="task-card">
       <div class="task-icon">📘</div>
       <div class="task-title">Manual 8</div>
-      <div class="task-type">Guía de ejercicios</div>
-      <div class="task-desc">Contenido descargable del Manual número 8.</div>
-      <a href="manuales/manual1.pdf" class="download-button" download>📥 Descargar</a>
-    </div>
-
-    <!-- Ejercicio -->
-    <div class="task-card">
-      <div class="task-icon">📐</div>
-      <div class="task-title">Ejercicio 8</div>
-      <div class="task-type">Ejercicio práctico</div>
-      <div class="task-desc">Ejercicio resuelto asociado al Manual 8.</div>
-      <a href="ejercicios/ejercicio1.pdf" class="download-button" download>📎 Ver Ejercicio</a>
+      <div class="task-type">Documento</div>
+      <div class="task-desc">Este documento puede ser agregado cuando esté disponible.</div>
+      <a href="#" class="download-button" aria-disabled="true">🔒 No disponible</a>
     </div>
   </div>
 </section>
-    <div class="external-link">
-      <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer">Visitar Microsoft Azure</a>
-    </div>
-  </main>
 
+<section class="task-group">
+  <h2 class="section-title">Semana 10</h2>
+  <hr>
+  <div class="task-list">
+    <div class="task-card">
+      <div class="task-icon">📘</div>
+      <div class="task-title">Manual 9</div>
+      <div class="task-type">Documento</div>
+      <div class="task-desc">Contenido por definir o agregar.</div>
+      <a href="#" class="download-button" aria-disabled="true">🔒 No disponible</a>
+    </div>
+  </div>
+</section>
+
+<section class="task-group">
+  <h2 class="section-title">Semana 11</h2>
+  <hr>
+  <div class="task-list">
+    <div class="task-card">
+      <div class="task-icon">📘</div>
+      <div class="task-title">Manual 10</div>
+      <div class="task-type">Documento</div>
+      <div class="task-desc">Espacio reservado para futuros contenidos.</div>
+      <a href="#" class="download-button" aria-disabled="true">🔒 No disponible</a>
+    </div>
+  </div>
+</section>
+
+<section class="task-group">
+  <h2 class="section-title">Semana 12</h2>
+  <hr>
+  <div class="task-list">
+    <div class="task-card">
+      <div class="task-icon">📘</div>
+      <div class="task-title">Manual 11</div>
+      <div class="task-type">Documento</div>
+      <div class="task-desc">Manual correspondiente a esta semana.</div>
+      <a href="#" class="download-button" aria-disabled="true">🔒 No disponible</a>
+    </div>
+  </div>
+</section>
+
+<section class="task-group">
+  <h2 class="section-title">Semana 13</h2>
+  <hr>
+  <div class="task-list">
+    <div class="task-card">
+      <div class="task-icon">📘</div>
+      <div class="task-title">Manual 12</div>
+      <div class="task-type">Documento</div>
+      <div class="task-desc">Contenido aún pendiente.</div>
+      <a href="#" class="download-button" aria-disabled="true">🔒 No disponible</a>
+    </div>
+  </div>
+</section>
+
+<section class="task-group">
+  <h2 class="section-title">Semana 14</h2>
+  <hr>
+  <div class="task-list">
+    <div class="task-card">
+      <div class="task-icon">📘</div>
+      <div class="task-title">Práctica</div>
+      <div class="task-type">Ejercicio</div>
+      <div class="task-desc">Archivos disponibles a subir para esta semana.</div>
+      <a href="#" class="download-button" aria-disabled="true">🔒 No disponible</a>
+    </div>
+  </div>
+</section>
+
+<section class="task-group">
+  <h2 class="section-title">Semana 15</h2>
+  <hr>
+  <div class="task-list">
+    <div class="task-card">
+      <div class="task-icon">📘</div>
+      <div class="task-title">Manual Final</div>
+      <div class="task-type">Compilado</div>
+      <div class="task-desc">Resumen final o prácticas acumuladas.</div>
+      <a href="#" class="download-button" aria-disabled="true">🔒 No disponible</a>
+    </div>
+  </div>
+</section>
+    <section class="task-group">
+      <h2 class="section-title">Semana 6</h2>
+      <hr>
+      <div class="task-list">
+        <div class="task-card">
+          <div class="task-icon">🧩</div>
+          <div class="task-title">Conexión con Azure</div>
+          <div class="task-type">Configuración</div>
+          <div class="task-desc">Guía para conectar a base de datos SQL Azure.</div>
+          <a href="tarea/Manual conecta a sql.pdf" class="download-button" download>📥 Descargar</a>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer>
     Hecho con dedicación por Barreto Roncal Steve | Universidad Peruana Los Andes | Base de Datos II - 2025
   </footer>
-
 </body>
 </html>
